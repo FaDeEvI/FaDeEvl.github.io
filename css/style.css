@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth; /* плавная анимация прокрутки*/ 
+  }
+/* margin - это внешний отступ, body - это весь документ. Сделано для того, чтобы не было пустой рамки на сайте и все было около края */
+body{
+    background-color: rgb(245, 245, 245); 
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;/*Сделал во всем документе шрифт, который подключил*/
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(65, 65, 65);
+}
+/* для класса top из hlml настраиваю оформление */
+.top  {
+    z-index:1;/*это для того, чтобы этот элемент был всегда сверху*/
+    margin-top: 0ch;    /* отступ сверху */
+    background-color: rgba(0, 0, 0, 0.39);   /* цвет фона */
+    padding: 20px;    /* внутренний отступ */
+    position: fixed; /* верхняя часть зафиксирована*/
+    width: 100%; /*ширина*/
+
+}
+
+/* Стилизация кнопки */
+.button{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    border: none;/*убрал границу кнопки*/
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 4px;
+    margin-left: 30px;
+    font-size: 25px;/*рфзмер шрифта*/
+}
+/* подкласс hover нужен для стилизации при наведении курсора на кнопку */
+.button:hover {
+    background: #ffffff;
+    color: rgb(61, 61, 61);
+    border-radius: 5px;/* закругление краев*/
+  }
+
+  .sssa{
+    margin-top: 43px;/*отступ, компенсирующий верхнюю часть*/
+
+}
+/* оформление лого */
+.logo{
+    max-height: 30px; /*размер по высоте*/
+    float: right; /*расположение лого справа*/ 
+    margin-right: 5%;
+}
+/* cтилизация фото ресторана*/
+.parallax-window {
+    margin-top: -20px;
+    min-height: 1000px;
+    background: transparent;
+}
+/* текст посередине */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
+    width: 500px;
+}
+/* стилизация текста с описанием */
+.description{
+    position: absolute;/* позиционирование для того, чтобы разместить справа от теста картинки*/
+    margin-left: 10%;/*отступ слева*/
+    font-size: 20px;
+    width: 45%;
+    margin-top: 0px;
+    padding: 10px;
+    font-weight: 600;
+    text-align : justify;
+
+}
+
+.menu{
+    margin-top: 90px;
+    text-align: right;
+    margin-right: 10%;
+}
+
+/* оформление контактов */
+.contacts{
+    position: absolute;
+    text-align: center;
+    margin-left: 20%;
+}
+.p1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.p2{
+
+    width: 200px;
+    color: #ffffff;
+}
+.p3{
+    color: #ffffff;
+    width: 200px;
+}
+.p4{
+    color: #ffffff;
+    width: 200px;
+}
+.p5{
+    color: #ffffff;
+    width: 200px;
+ }
+
+ /* расположение карты */
+ .map{
+    text-align: right;
+    margin-right: 20%;
+ }
+.contacts1{
+    background-color: rgb(65, 65, 65);
+}
