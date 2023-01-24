@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- UTF-8 (от англ. Unicode Transformation Format, 8-bit — «формат преобразования Юникода, 8-бит») — распространённый стандарт кодирования символов -->
+    <meta charset="UTF-8">
+    <!-- title -это заголовок сайта (название вверху) -->
+    <title>IvanFadeev</title>
+    <!-- подключение css файла к html -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <!-- подключил шрифт с сайта https://fonts.google.com/specimen/Roboto?query=roboto (скрин есть)-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- подключение javascript для красивой прокрутки -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.js-1.5.0/parallax.js"></script>
+</head>
+<body>
+    <!-- div - это контейнер, в котором что-то содержится, сейчас - это кнопки, которые на самом деле просто ссылки (а)
+        (class используется, чтобы в css потом делать оформление) -->
+    <div class="top">
+        <a href="#top" class="button">Главная</a>
+        <a href="#about_us" class="button">О нас</a>
+        <a href="#contacts" class="button">Контакты</a>
+
+        <img src="./images/logo.png" alt="logo" class="logo"><!-- добавил лого -->
+
+    </div>
+    <br>
+    <!-- ниже блок с фото ресторана с эффектом параллакса -->
+    <div class="parallax-window" data-parallax="scroll" data-image-src="./images/photo.PNG">
+        <div class="centered" data-parallax="scroll">Ресторан №1</div>
+    </div>
+    <p id="about_us"></p>
+    <!-- на сайте используется метод якорной ссылки. Это когда при нажатии на кнопку, например "О нас" на этой же странице сайт прокручивается до нужного места
+    ниже я объявил id="description" это и есть якорь, а на кнопке "О нас" ссылка (href) с таким же названием, только с решеткой -->
+
+    
+    <div class="about_us" >
+        <div class="description">
+            <p>
+                <h1>Ресторан №1<br>
+                Гулять так гулять!</h1>
+                
+                <br>
+                <br>
+                <!-- h3 - это тег для размера -->
+                <h3>Ресторан №1 в историческом здании миусского 
+                депо на Лесной улице - одно из самых атмосферных мест в городе. Ресторан, где 
+                кипит жизнь и дышится полной грудью. Ощущения, за которыми стоит охотиться!</h3>
+<!-- br - перенос строки -->
+                <br>
+                <br>
+                Любимая кухня, богатый бар, танцы и караоке – на первый взгляд, в Ресторан №1 уже 
+                есть все привычные составляющие успеха. Однако есть «секретный» ингредиент, 
+                благодаря которому у ресторана особое место на гастрономической карте города. 
+                Это «лесная» специфика, которой дышит Ресторан №1, – она обыграна и в лофтовом 
+                интерьере, и, главное, в меню. Меню в Ресторан №1, с одной стороны, отдает дань 
+                уважения мировой кухне, взяв оттуда проверенные временем хиты. С другой – 
+                никакой обыденности: «лесной» акцент делает кухню ресторана не только 
+                предсказуемо качественной, но и любопытной.</p>
+        </div>  
+        <!-- картинки с едой -->
+        <div class="menu">
+            <img src="./images/1-k.jpg" alt="1"><br><br><br>
+            <img src="./images/2-k.jpg" alt="1"><br><br><br>
+            <img src="./images/3-k.jpg" alt="1"><br><br><br>
+        </div>  
+    </div>
+    <br>
+<!-- контакты -->
+<div class="contacts1">
+    <p class="p1">
+        Контакты Ресторана №1 на Красной площади
+    </p>
+        <div class="contacts" id="contacts">
+        
+        <div class="p2"><h3>Адрес</h3>
+            г. Москва<br>
+            Красная площадь</div>
+            <hr>
+        <div class="p3"><h3>График работы</h3>
+                ВС-ЧТ - 12:00-00:00<br>
+                ПТ-СБ - 12:00-05:00</div>
+                <hr>
+        <div class="p4"><h3>Телефон</h3>
+                    +7 (985) 123 12 33
+        </div >
+        <hr>
+        <div class="p5"><h3>E-mail</h3>
+         example@email.ru
+        </div>
+        <hr>
+        <br>
+
+
+        
+    </div>
+        <!-- добавление карты на сайт -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.263005441559!2d37.618606316003884!3d55.75393329937217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1673273124053!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <div class="footer"></div>
+</div>
+
+
+
+
+
+</body>
+</html>
